@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Jana Portfolio</title>
+</head>
+
+<body>
+
+<!-- HAMBURGER -->
+<div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!--SIDEBAR -->
+<div class="sidebar">
+    <div class="logo">
+        <h1 class="logo-text">
+            <span class="gradient-text">JA</span>
+        </h1>
+    </div>
+    
+    <div class="links">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+            <li><a href="content.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="separator-line"></div>
+        <p class="copyright">
+            © 2026 JANA <br> ALL RIGHTS RESERVED.
+        </p>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="content">
+    <section class="one">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <div class="text">
+                        <h1 style="font-size: 70px;">
+                            My Name Is <br>
+                            <span class="gradient-text">Jana Abd El Naby</span>
+                        </h1>
+                        <h4>I'm a Web Developer</h4>
+                        <p class="text-dark">
+                            Based in Egypt, passionate about creating interactive and user-friendly websites...
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <button class="talk-btn" id="talkBtn">
+                            Let's talk with me
+                            <span class="arrow-container">
+                                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24">
+                                    <path d="M5 19L19 5M19 5H10M19 5V14"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="contact-info d-flex gap-4 mt-3">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+20 123 456 789</span>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>jana@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="profile-img-container">
+                        <img src="./tedex.jpg" alt="Jana Abd El Naby">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ABOUT -->
+<section class="about-me" id="about-me">
+    <div class="about-bg"></div>
+
+    <div class="container">
+        <div class="about-content">
+            <h2>About me</h2>
+            <p>
+                I am a Creative Web Developer, dedicated to building seamless digital solutions 
+                where robust logic meets elegant design.
+            </p>
+            
+            <div class="skills-container">
+
+                <div class="skill">
+                    <span>Frontend Development</span>
+                    <div class="progress-bar">
+                        <div class="fill" data-done="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Responsive Web Apps</span>
+                    <div class="progress-bar">
+                        <div class="fill" data-done="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Modern UI Solutions</span>
+                    <div class="progress-bar">
+                        <div class="fill" data-done="65"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--EXPERIENCE  -->
+<section class="four">
+    <h1 class="text-center mb-5">
+        <span class="gradient-text" style="margin-top: 15px;">My Work Experience</span>
+    </h1>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- RIGHT -->
+            <div class="col-5">
+                <div class="right-side" style="flex: 1; text-align: left;">
+                    <div class="item mb-5">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">Web Logic Developer</h5>
+                        <p style="color: #444; font-size: 14px;">
+                            Building dynamic applications using Python and Databases,
+                            ensuring high performance through optimized Data Structures.
+                        </p>
+                    </div>
+
+                    <div class="item mb-5">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">UI & API Specialist</h5>
+                        <p style="color: #444; font-size: 14px;">
+                            Crafting modern interfaces with Tailwind CSS and integrating real-time data via APIs.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">WordPress Expert</h5>
+                        <p style="color: #444; font-size: 14px;">
+                            Designing and customizing professional websites using WordPress for various businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTER -->
+            <div class="col-2">
+                <div class="center-line" style=" display: flex; flex-direction: column; align-items: center;">
+                    <div class="line-item">
+                        <div class="dot"></div>
+                        <div class="v-line"></div>
+                    </div>
+                    <div class="line-item">
+                        <div class="dot"></div>
+                        <div class="v-line"></div>
+                    </div>
+                    <div class="line-item">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEFT -->
+            <div class="col-5">
+                <div class="left-side" style="flex: 1; text-align: right;">
+                    <div class="item mb-5">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">Full-Stack Projects</h5>
+                        <p style="color: #6c757d; font-size: 14px;">Python, SQL & Data Structures</p>
+                    </div>
+                    <div class="item mb-5">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">Frontend Development</h5>
+                        <p style="color: #6c757d; font-size: 14px;">Tailwind CSS & JavaScript ES6</p>
+                    </div>
+                    <div class="item mb-5">
+                        <h5 style="font-weight: bold; margin-bottom: 5px;">CMS Solutions</h5>
+                        <p style="color: #6c757d; font-size: 14px;">WordPress Customization & SEO</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS  -->
+<section class="three">
+    <h1 style="margin-left: 300px; margin-top: 50px; font-size: 50px;">
+        <span class="gradient-text">My Projects:</span>
+    </h1>
+
+    <main class="main-wrapper">
+        <div class="showcase-container">
+
+            <!-- PROJECT 1 -->
+            <div class="project-tab active mt-5">
+                <div class="tab-bg Appexy-img"></div>
+                <div class="tab-content">
+                    <div class="tab-info">
+                        <span class="tag">01 / Frontend (Tailwind)</span>
+                        <h3>Appexy Platform</h3>
+                        <p>A modern, utility-first landing page focused on seamless activity management and mobile-first design</p>
+
+                        <a href="https://github.com/aj206837-tech/Appexy-Platform" class="view-btn">
+                            Check Repo
+                            <span class="git">
+                                <svg class="git-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 19L19 5M19 5H10M19 5V14"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-tab mt-5">
+                <div class="tab-bg furni-img"></div>
+                <div class="tab-content">
+                    <div class="tab-info">
+                        <span class="tag">02 / Interior</span>
+                        <h3>Furni Store</h3>
+                        <p>A high-end digital showroom for modern furniture and home aesthetics</p>
+
+                        <a href="https://github.com/aj206837-tech/Furni" class="view-btn">
+                            Check Repo
+                            <span class="git">
+                                <svg class="git-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 19L19 5M19 5H10M19 5V14"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-tab mt-5">
+                <div class="tab-bg movie-img"></div>
+                <div class="tab-content">
+                    <div class="tab-info">
+                        <span class="tag">03 / API Design</span>
+                        <h3>Movie Flex</h3>
+                        <p>Movie discovery engine utilizing TMDB API integration.</p>
+
+                        <a href="https://github.com/aj206837-tech/Movie-flex" class="view-btn">
+                            Check Repo
+                            <span class="git">
+                                <svg class="git-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 19L19 5M19 5H10M19 5V14"
+                                          stroke="currentColor"
+                                          stroke-width="2"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</section>
+
+<!--CONTACT -->
+<section class="contact-section">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- LEFT -->
+            <div class="col-md-6 c-left-content">
+                <div class="content-wrapper">
+                    <p>contact</p>
+                    <h1>Chat with me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo!</p>
+
+                    <div class="contact-info mt-4">
+                        <h4>+20 123 456 789</h4>
+                        <h3>jana@example.com</h3>
+                    </div>
+
+                    <div class="c-icons-row">
+                        <a href="#" class="social-item">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>FACEBOOK</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-twitter"></i>
+                            <span>TWITTER</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>INSTAGRAM</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-md-6 gradient-bg-side">
+                <form class="custom-form" id="contactForm">
+
+                    <p style="color:black; margin-bottom: 10px;">START A PROJECT</p>
+                    <h1 style="color:black">Any project?!</h1>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <label>NAME</label>
+                                <input type="text" id="userName" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <label>EMAIL</label>
+                                <input type="email" id="userEmail" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <label>MESSAGE</label>
+                        <textarea id="userMessage" required></textarea>
+                    </div>
+
+                    <button type="button" class="talk-btn" id="submitBtn">
+                        Send Message
+                        <span class="arrow-container">
+                            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 19L19 5M19 5H10M19 5V14"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SCROLL TOP BUTTON  -->
+<button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!--JS -->
+<script src="./bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
