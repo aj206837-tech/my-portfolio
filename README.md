@@ -1,4 +1,4 @@
-# Frontend Portfolio | Jana
+#  Frontend Portfolio | Jana
 
 Welcome to my personal portfolio! This project is a reflection of my journey as a **Creative Software Developer**, where I combine robust logic with elegant, minimalist design.
 
@@ -10,18 +10,20 @@ Welcome to my personal portfolio! This project is a reflection of my journey as 
 * **Custom Sidebar Navigation:** Smooth transitions for a seamless user experience.
 
 ## 🛠️ Technical Stack
-* **Core:** HTML5, CSS3, JavaScript (ES6+)
-* **Styling:** Bootstrap 5 , Custom CSS (Linear Gradients & Animations)
-* **Tools:** Git/GitHub)
-* **APIs:** Integration experience with TMDB API.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 
 ## 📁 Key Projects Featured
-
-* **Apexie:** A modern, utility-first landing page.
+* **Apexie:** A modern, utility-first landing page for seamless activity management.
 * **Furni:** A high-end digital showroom for modern furniture and home aesthetics.
-* **Movie Flex:** A movie discovery engine utilizing the TMDB API.
+* **Movie Flex:** A movie discovery engine utilizing the TMDB API to fetch and display film information.
 
-## 🎨 Design Philosophy
-> "I believe that software should not only function perfectly but also look like a piece of art." 
-Focused on **Modern UI Solutions**, I utilize white space and strategic color gradients to create intuitive digital experiences.
 
+
+## 🚀 How to Run Locally
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/aj206837-tech/my-portfolio.git](https://github.com/aj206837-tech/my-portfolio.git)
