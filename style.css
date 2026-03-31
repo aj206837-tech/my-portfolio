@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* بيمنع السكرول يمين وشمال */
+    position: relative;
+}
+
+* {
+    box-sizing: border-box; /* بيضمن إن الـ padding ميزودش العرض */
+}
 body {
     background-color: #fff;
     overflow-x: hidden;
@@ -869,7 +878,15 @@ textarea:-webkit-autofill:focus {
     transform: translateY(-5px); 
 }
 
+
+/* ===== أقل من 992px ===== */
 @media (max-width: 992px) {
+    .four .col-5, .four .col-2 {
+    flex: 1 1 auto;                 
+    min-height: 250px;             
+    box-sizing: border-box;
+}
+    /* Hamburger */
     .hamburger {
         display: flex !important;
         position: fixed;
@@ -897,19 +914,11 @@ textarea:-webkit-autofill:focus {
         transition: 0.3s;
     }
     
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
     
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
-    
-    /*sidebar */
+    /* Sidebar */
     .sidebar {
         transform: translateX(-100%);
         transition: transform 0.4s ease-in-out;
@@ -918,11 +927,9 @@ textarea:-webkit-autofill:focus {
         width: 280px;
     }
     
-    .sidebar.active {
-        transform: translateX(0);
-    }
-    
- 
+    .sidebar.active { transform: translateX(0); }
+
+    /* Content Layout */
     .content,
     .main-wrapper,
     .four,
@@ -931,308 +938,123 @@ textarea:-webkit-autofill:focus {
         margin-left: 0 !important;
     }
     
-    .content {
-        padding: 100px 20px 40px 20px !important;
-    }
-    
-    .main-wrapper {
-        margin-left: 0 !important;
-        padding: 20px !important;
-        height: auto !important;
-    }
-    
-    .four {
-        margin-left: 0 !important;
-        padding: 40px 20px !important;
-        overflow-x: auto;
-    }
-    
-    .contact-section {
-        margin-left: 0 !important;
-    }
-    
-    /*  Hero Section  */
-    .one .row {
-        flex-direction: row !important;
-        text-align: center !important;
-        gap: 40px !important;
-    }
-    
-    .text h1 {
-        font-size: 40px !important;
-    }
-    
-    .profile-img-container {
-        width: 320px !important;
-        height: 320px !important;
-        margin: 0 auto !important;
-    }
-    
-    .contact-info {
-        justify-content: center !important;
-        flex-wrap: wrap !important;
-    }
-    
-    /* ===== About Section ===== */
-    .about-me .container {
-        flex-direction: column !important;
-        padding: 20px !important;
-    }
-    
-    .about-content {
-        width: 100% !important;
-        padding-left: 0 !important;
-        padding-top: 30px !important;
-        text-align: center !important;
-    }
-    
-    .about-bg {
-        display: none !important;
-    }
-    
-    .about-content h2 {
-        font-size: 2.5rem !important;
-    }
-    
-    /*  Projects Section */
-    .showcase-container {
-        flex-direction: column !important;
-        height: auto !important;
-        gap: 25px !important;
-    }
-    
-    .project-tab {
-        min-height: 380px !important;
-        flex: none !important;
-    }
-    
-    .project-tab:hover {
-        flex: none !important;
-    }
-    
-    .tab-info {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-    
-    .tab-info h3 {
-        font-size: 1.8rem !important;
-    }
+    .content { padding: 100px 20px 40px 20px !important; }
+    .main-wrapper { padding: 20px !important; height: auto !important; }
+    .four { margin: 40px 20px !important;  }
+    .contact-section { margin-left: 0 !important; }
 
+    /* Hero Section */
+    .one .row { flex-direction: row !important; text-align: center !important; gap: 40px !important; }
+    .text h1 { font-size: 40px !important; }
+    .profile-img-container { width: 320px !important; height: 320px !important; margin: 0 auto !important; }
+    .contact-info { justify-content: center !important; flex-wrap: wrap !important; }
 
-    .four .row {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        align-items: flex-start;
-    }
+    /* About Section */
+    .about-me .container { flex-direction: column !important; padding: 20px !important; }
+    .about-content { width: 100% !important; padding-left: 0 !important; padding-top: 30px !important; text-align: center !important; }
+    .about-bg { display: none !important; }
+    .about-content h2 { font-size: 2.5rem !important; }
 
-    .four .col-5 {
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
+    /* Projects */
+    .showcase-container { flex-direction: column !important; height: auto !important; gap: 25px !important; }
+    .project-tab { min-height: 380px !important; flex: none !important; }
+    .tab-info { opacity: 1 !important; transform: translateY(0) !important; }
+    .tab-info h3 { font-size: 1.8rem !important; }
 
-    .four .col-2 {
-        flex: 0 0 20%;
-        max-width: 20%;
-        margin-left: 0 !important;
-    }
-    .center-line {
-        display: flex !important; 
-    }
+    /* Four / Experience Section */
+    .four .row { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; align-items: flex-start; }
+    .four .col-5 { flex: 0 0 40%; max-width: 40%; }
+    .four .col-2 { flex: 0 0 20%; max-width: 20%; margin-left: 0 !important; }
+    .center-line { display: flex !important; }
 
-    /* Contact Section  */
-    .contact-section .row {
-        flex-direction: column !important;
-    }
-    
+    /* Contact Section */
+    .contact-section .row { flex-direction: column !important; }
     .c-left-content,
-    .gradient-bg-side {
-        width: 100% !important;
-        padding: 50px 25px !important;
-        min-height: auto !important;
-    }
-    
-    .c-left-content h1 {
-        font-size: 40px !important;
-    }
-    
-    .gradient-bg-side h1 {
-        font-size: 32px !important;
-        margin-bottom: 25px !important;
-    }
-    
-    .c-icons-row {
-        justify-content: center !important;
-        gap: 15px !important;
-    }
-    
- /* scroll-btn  */
+    .gradient-bg-side { width: 100% !important; padding: 50px 25px !important; min-height: auto !important; }
+    .c-left-content h1 { font-size: 40px !important; }
+    .gradient-bg-side h1 { font-size: 32px !important; margin-bottom: 25px !important; }
+    .c-icons-row { justify-content: center !important; gap: 15px !important; }
+
+    /* Scroll button */
     #scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background: linear-gradient(135deg, #ff0080, #ff8c00); 
-    color: white;
-    cursor: pointer;
-    padding: 25px;
-     border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%; 
-    font-size: 23px;
-    transition: transform 0.3s, opacity 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background: linear-gradient(135deg, #ff0080, #ff8c00); 
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%; 
+        font-size: 23px;
+        transition: transform 0.3s, opacity 0.3s;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
 }
-}
-/* ===== تابلت - أقل من 768px ===== */
+
+/* ===== أقل من 768px ===== */
 @media (max-width: 768px) {
-    .hamburger {
-        width: 40px;
-        height: 40px;
-        top: 15px;
-        right: 15px;
-    }
-
-    .hamburger span {
-        width: 22px;
-        height: 3px;
-    }
-
-    .text h1 {
-        font-size: 32px !important;
-    }
-
-    .profile-img-container {
-        width: 250px !important;
-        height: 250px !important;
-        margin: 0 auto !important;
-    }
-
-    .contact-info {
-        gap: 10px !important;
-    }
-
-    .about-me .container {
-        padding: 15px !important;
-    }
-
-    .about-content {
-        padding-top: 20px !important;
-        text-align: center !important;
-    }
-
-    .about-content h2 {
-        font-size: 2rem !important;
-    }
-
-    .showcase-container {
-        gap: 20px !important;
-    }
-
-    .project-tab {
-        min-height: 350px !important;
-    }
-
-    .tab-info h3 {
-        font-size: 1.6rem !important;
-    }
-
-    .four .col-5 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .four .col-2 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-
+    .hamburger { width: 40px; height: 40px; top: 15px; right: 15px; }
+    .hamburger span { width: 22px; height: 3px; }
+    .text h1 { font-size: 32px !important; }
+    .profile-img-container { width: 250px !important; height: 250px !important; }
+    .contact-info { gap: 10px !important; }
+    .about-me .container { padding: 15px !important; }
+    .about-content { padding-top: 20px !important; }
+    .about-content h2 { font-size: 2rem !important; }
+    .showcase-container { gap: 20px !important; }
+    .project-tab { min-height: 350px !important; }
+    .tab-info h3 { font-size: 1.6rem !important; }
+    .four .col-5 { flex: 0 0 50%; max-width: 50%; }
+    .four .col-2 { flex: 0 0 25%; max-width: 25%; }
     .c-left-content,
-    .gradient-bg-side {
-        padding: 40px 20px !important;
-    }
-
+    .gradient-bg-side { padding: 40px 20px !important; }
     .c-left-content h1,
-    .gradient-bg-side h1 {
-        font-size: 36px !important;
-    }
-
-    #scrollTopBtn {
-        padding: 20px;
-        font-size: 20px;
-    }
+    .gradient-bg-side h1 { font-size: 36px !important; }
+    #scrollTopBtn { padding: 20px; font-size: 20px; }
+}
+@media (max-width: 580px) {
+    .hamburger { width: 40px; height: 40px; top: 15px; right: 15px; }
+    .hamburger span { width: 22px; height: 3px; }
+    .text h1 { font-size: 32px !important; }
+    .profile-img-container { width: 250px !important; height: 250px !important; }
+    .contact-info { gap: 10px !important; }
+    .about-me .container { padding: 15px !important; }
+    .about-content { padding-top: 20px !important; }
+    .about-content h2 { font-size: 2rem !important; }
+    .showcase-container { gap: 20px !important; }
+    .project-tab { min-height: 350px !important; }
+    .tab-info h3 { font-size: 1.6rem !important; }
+    .four .col-5 { flex: 0 0 50%; max-width: 50%; }
+    .four .col-2 { flex: 0 0 25%; max-width: 25%; }
+    .c-left-content,
+    .gradient-bg-side { padding: 40px 20px !important; }
+    .c-left-content h1,
+    .gradient-bg-side h1 { font-size: 36px !important; }
+    #scrollTopBtn { padding: 20px; font-size: 20px; }
+}
+@media (max-width: 480px) {
+    .hamburger { width: 40px; height: 40px; top: 15px; right: 15px; }
+    .hamburger span { width: 22px; height: 3px; }
+    .text h1 { font-size: 32px !important; }
+    .profile-img-container { width: 250px !important; height: 250px !important; }
+    .contact-info { gap: 10px !important; }
+    .about-me .container { padding: 15px !important; }
+    .about-content { padding-top: 20px !important; }
+    .about-content h2 { font-size: 2rem !important; }
+    .showcase-container { gap: 20px !important; }
+    .project-tab { min-height: 350px !important; }
+    .tab-info h3 { font-size: 1.6rem !important; }
+    .four .col-5 { flex: 0 0 50%; max-width: 50%; }
+    .four .col-2 { flex: 0 0 25%; max-width: 25%; }
+    .c-left-content,
+    .gradient-bg-side { padding: 40px 20px !important; }
+    .c-left-content h1,
+    .gradient-bg-side h1 { font-size: 36px !important; }
+    #scrollTopBtn { padding: 20px; font-size: 20px; }
 }
 
-/* ===== موبايل صغير - أقل من 576px ===== */
-@media (max-width: 576px) {
-    .hamburger {
-        width: 35px;
-        height: 35px;
-        top: 10px;
-        right: 10px;
-    }
 
-    .hamburger span {
-        width: 20px;
-        height: 2.5px;
-    }
-
-    .text h1 {
-        font-size: 28px !important;
-    }
-
-    .profile-img-container {
-        width: 200px !important;
-        height: 200px !important;
-    }
-
-    .contact-info {
-        flex-direction: column !important;
-        gap: 8px !important;
-    }
-
-    .about-content h2 {
-        font-size: 1.8rem !important;
-    }
-
-    .showcase-container {
-        flex-direction: column !important;
-        gap: 15px !important;
-    }
-
-    .project-tab {
-        min-height: 300px !important;
-    }
-
-    .tab-info h3 {
-        font-size: 1.4rem !important;
-    }
-
-    .four .col-5 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .four .col-2 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-left: 0 !important;
-    }
-
-    .c-left-content,
-    .gradient-bg-side {
-        padding: 30px 15px !important;
-    }
-
-    .c-left-content h1,
-    .gradient-bg-side h1 {
-        font-size: 28px !important;
-    }
-
-    #scrollTopBtn {
-        padding: 15px;
-        font-size: 18px;
-    }
-}
